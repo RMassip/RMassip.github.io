@@ -12,6 +12,67 @@
 	<link rel="stylesheet" href="assets/css/johndoe.css">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <style>
+        .skill-content {
+  display: none; /* Cache le contenu complet par défaut */
+  width: 80%; /* Définit la largeur du contenu complet à 80% */
+  margin: 0 auto; /* Centre le contenu complet horizontalement */
+}
+
+.skill-expanded {
+  width: 300%; /* Si l'article est étendu, il occupe 100% de la largeur */
+}
+
+.col-md-4.col-sm-6 {
+  margin-bottom: 30px;
+}
+
+.content.skill-content {
+  position: relative;
+  width: 100%; /* Ajustez la largeur selon vos besoins */
+  height: 400px; /* Ajustez la hauteur selon vos besoins */
+}
+
+.case {
+  position: absolute;
+  width: 50%; /* Demi-largeur pour chaque case */
+  height: 50%; /* Demi-hauteur pour chaque case */
+  text-align: center;
+}
+
+.case img {
+  width: 90%; /* Pour s'assurer que l'image remplit la case */
+  height: auto; /* Hauteur automatique pour conserver la proportion hauteur/largeur */
+  object-fit: cover; /* Ajuste la taille de l'image pour couvrir la case */
+  max-height: 100%; /* Ajuste la taille de l'image pour couvrir la case */
+}
+
+/* comptétence 1 */
+
+.case.case1 {
+  top: 0;
+  left: 0;
+  background-color: white; /* Couleur de fond de la case */
+}
+
+.case.case2 {
+  top: 0;
+  right: 0;
+  background-color: white; /* Couleur de fond de la case */
+}
+
+.case.case3 {
+  bottom: 0;
+  left: 0;
+  background-color: white; /* Couleur de fond de la case */
+}
+
+.case.case4 {
+  bottom: 0;
+  right: 0;
+  background-color: white; /* Couleur de fond de la case */
+}
+    </style>
     <a href="components.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-shift-left-alt"></i> Components</a>
     <header class="header">
         <div class="container">
@@ -117,8 +178,7 @@
                         <div class="card-body">
                             <h6 class="title text-danger">2018 - 2021</h6>
                             <P>IUT Blagnac Informatique</P>
-                            <P class="subtitle">BAC STI2D option SINn</P>
-                            <hr>
+                            <P class="subtitle">BAC STI2D option SIN</P>
                         </div>
                     </div>
                 </div>
@@ -130,7 +190,6 @@
                              <h6 class="title text-danger">2021 - Present</h6>
                              <P>IUT Blagnac Informatique</P>
                              <P class="subtitle">Spécialisation dans le Développement et réalisation d'application</P>
-                             <hr>
                          </div>
                      </div>
                 </div>
@@ -142,7 +201,6 @@
                              <h6 class="title text-danger">2023 - 2025</h6>
                              <P>IPI Toulouse</P>
                              <P class="subtitle">Master Expert ingénierie Logicielle spécialisé dans l'IA et les BIG DATA</P>
-                             <hr>
                          </div>
                      </div>
                 </div>
